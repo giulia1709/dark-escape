@@ -10,6 +10,12 @@ namespace myTiles {
     export const tile3 = image.ofBuffer(hex``);
     //% fixedInstance jres blockIdentity=images._tile
     export const tile4 = image.ofBuffer(hex``);
+    //% fixedInstance jres blockIdentity=images._tile
+    export const tile5 = image.ofBuffer(hex``);
+    //% fixedInstance jres blockIdentity=images._tile
+    export const tile6 = image.ofBuffer(hex``);
+    //% fixedInstance jres blockIdentity=images._tile
+    export const tile7 = image.ofBuffer(hex``);
 
     helpers._registerFactory("tilemap", function(name: string) {
         switch(helpers.stringTrim(name)) {
@@ -35,7 +41,7 @@ namespace myTiles {
 ......................................................................................................................................................
 ......................................................................................................................................................
 ......................................................................................................................................................
-`, [myTiles.transparency16,sprites.dungeon.darkGroundCenter,sprites.dungeon.doorLockedWest,sprites.dungeon.floorLight0,sprites.dungeon.stairLarge,sprites.dungeon.floorDark0,sprites.dungeon.floorDark1,sprites.dungeon.floorDark4,sprites.dungeon.floorMixed,myTiles.tile3,myTiles.tile4], TileScale.Sixteen);
+`, [myTiles.transparency16,sprites.dungeon.darkGroundCenter,sprites.dungeon.doorLockedWest,sprites.dungeon.floorLight0,sprites.dungeon.stairLarge,sprites.dungeon.floorDark0,sprites.dungeon.floorDark1,sprites.dungeon.floorDark4,sprites.dungeon.floorMixed,myTiles.tile5,myTiles.tile4,myTiles.tile6,myTiles.tile7], TileScale.Sixteen);
         }
         return null;
     })
@@ -51,6 +57,12 @@ namespace myTiles {
             case "tile3":return tile3;
             case "lampada":
             case "tile4":return tile4;
+            case "miaTessera2":
+            case "tile5":return tile5;
+            case "miaTessera3":
+            case "tile6":return tile6;
+            case "miaTessera4":
+            case "tile7":return tile7;
         }
         return null;
     })

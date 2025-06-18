@@ -28,6 +28,24 @@
         "tilemapTile": true,
         "displayName": "lampada"
     },
+    "tile5": {
+        "data": "hwQQABAAAAAA//8PAAAAAPAAAPAAAAAADwAAAA8AAAAPAAAA8AAAAA8AAADwAAAADwAAAPAAAAAPAAAA8AAAAA8AAADwAAAADwAAAG8AAADwAADwZgAAAAD//29mBgAAAAAAAGBmAAAAAAAAAGYGAAAAAAAAYGYAAAAAAAAAZgYAAAAAAABgBg==",
+        "mimeType": "image/x-mkcd-f4",
+        "tilemapTile": true,
+        "displayName": "miaTessera2"
+    },
+    "tile6": {
+        "data": "hwQQABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAO7u7g4AAAAA7u7uDgAAAADu7u4OAP//AC4iIg7wABAP7uLuDg8Q8f/uLu7+8AAQD+7i7g4A//8ALiIiDgAAAADu7u4OAAAAAO7u7g4AAAAA7u7uDgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+        "mimeType": "image/x-mkcd-f4",
+        "tilemapTile": true,
+        "displayName": "miaTessera3"
+    },
+    "tile7": {
+        "data": "hwQQABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwAAAAAAAAAP8AAAAAAADw////////////AAAAAAAA8P8AAAAAAAAA/wAAAAAAAADwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+        "mimeType": "image/x-mkcd-f4",
+        "tilemapTile": true,
+        "displayName": "miaTessera4"
+    },
     "livello1": {
         "id": "livello1",
         "mimeType": "application/mkcd-tilemap",
@@ -42,8 +60,10 @@
             "sprites.dungeon.floorDark1",
             "sprites.dungeon.floorDark4",
             "sprites.dungeon.floorMixed",
-            "myTiles.tile3",
-            "myTiles.tile4"
+            "myTiles.tile5",
+            "myTiles.tile4",
+            "myTiles.tile6",
+            "myTiles.tile7"
         ],
         "displayName": "livello1"
     },
