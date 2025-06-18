@@ -6,6 +6,10 @@ namespace myTiles {
     export const tile1 = image.ofBuffer(hex``);
     //% fixedInstance jres blockIdentity=images._tile
     export const tile2 = image.ofBuffer(hex``);
+    //% fixedInstance jres blockIdentity=images._tile
+    export const tile3 = image.ofBuffer(hex``);
+    //% fixedInstance jres blockIdentity=images._tile
+    export const tile4 = image.ofBuffer(hex``);
 
     helpers._registerFactory("tilemap", function(name: string) {
         switch(helpers.stringTrim(name)) {
@@ -31,7 +35,7 @@ namespace myTiles {
 ......................................................................................................................................................
 ......................................................................................................................................................
 ......................................................................................................................................................
-`, [myTiles.transparency16,sprites.dungeon.darkGroundCenter,sprites.dungeon.doorLockedWest,sprites.dungeon.floorLight0,sprites.dungeon.stairLarge,sprites.dungeon.floorDark0,sprites.dungeon.floorDark1,sprites.dungeon.floorDark4,sprites.dungeon.floorMixed,myTiles.tile2], TileScale.Sixteen);
+`, [myTiles.transparency16,sprites.dungeon.darkGroundCenter,sprites.dungeon.doorLockedWest,sprites.dungeon.floorLight0,sprites.dungeon.stairLarge,sprites.dungeon.floorDark0,sprites.dungeon.floorDark1,sprites.dungeon.floorDark4,sprites.dungeon.floorMixed,myTiles.tile3,myTiles.tile4], TileScale.Sixteen);
         }
         return null;
     })
@@ -43,6 +47,10 @@ namespace myTiles {
             case "tile1":return tile1;
             case "miaTessera0":
             case "tile2":return tile2;
+            case "miaTessera1":
+            case "tile3":return tile3;
+            case "lampada":
+            case "tile4":return tile4;
         }
         return null;
     })

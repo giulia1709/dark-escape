@@ -163,7 +163,7 @@ nora = sprites.create(img`
     ..........fffffffff..........
     `, SpriteKind.Player)
 controller.moveSprite(nora, 100, 0)
-nora.setPosition(24, 30)
+nora.setPosition(15, 99)
 scene.cameraFollowSprite(nora)
 game.setDialogFrame(img`
     .....cccccccccccccc.....
