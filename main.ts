@@ -1,3 +1,12 @@
+controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
+    if (nora.vy == 0) {
+        nora.vy = -100
+    }
+})
+controller.B.onEvent(ControllerButtonEvent.Pressed, function () {
+	
+})
+let nora: Sprite = null
 scene.setBackgroundColor(8)
 scene.setBackgroundImage(img`
     8888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888
@@ -122,7 +131,7 @@ scene.setBackgroundImage(img`
     7777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777
     `)
 tiles.setCurrentTilemap(tilemap`livello1`)
-let nora = sprites.create(img`
+nora = sprites.create(img`
     .............................
     .........eeeeeeeeee..........
     .......eeeeeeeeeeeeee........
@@ -157,22 +166,32 @@ controller.moveSprite(nora, 100, 0)
 nora.setPosition(24, 30)
 scene.cameraFollowSprite(nora)
 game.setDialogFrame(img`
-    . . . . . . . . . . . . . . . 
-    . . . . . . . . . . . . . . . 
-    . . . . . . . . . . . . . . . 
-    . . . . . . . . . . . . . . . 
-    . . . . . . . . . . . . . . . 
-    . . . . . . . . . . . . . . . 
-    . . . . . . . . . . . . . . . 
-    . . . . . . . . . . . . . . . 
-    . . . . . . . . . . . . . . . 
-    . . . . . . . . . . . . . . . 
-    . . . . . . . . . . . . . . . 
-    . . . . . . . . . . . . . . . 
-    . . . . . . . . . . . . . . . 
-    . . . . . . . . . . . . . . . 
-    . . . . . . . . . . . . . . . 
+    .....cccccccccccccc.....
+    ...cbd111111111111dbc...
+    ..cd1111111111111111dc..
+    .cd111111111111111111dc.
+    .b11111111111111111111b.
+    cd11111111111111111111dc
+    c1111111111111111111111c
+    c1111111111111111111111c
+    c1111111111111111111111c
+    c1111111111111111111111c
+    c1111111111111111111111c
+    c1111111111111111111111c
+    c1111111111111111111111c
+    c1111111111111111111111c
+    c1111111111111111111111c
+    c1111111111111111111111c
+    cd11111111111111111111dc
+    cb11111111111111111111bc
+    ccd111111111111111111dc.
+    .ccd1111111111111111dcc.
+    ..c111111111111111dbcc..
+    .b11dcccccccccccccccc...
+    cddcccccccccccccccc.....
+    ccccc...................
     `)
+game.showLongText("", DialogLayout.Full)
 game.onUpdate(function () {
     nora.ay = 100
 })
