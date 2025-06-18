@@ -10,6 +10,12 @@
         "tilemapTile": true,
         "displayName": "miaTessera"
     },
+    "tile2": {
+        "data": "hwQQABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+        "mimeType": "image/x-mkcd-f4",
+        "tilemapTile": true,
+        "displayName": "miaTessera0"
+    },
     "livello1": {
         "id": "livello1",
         "mimeType": "application/mkcd-tilemap",
@@ -23,7 +29,8 @@
             "sprites.dungeon.floorDark0",
             "sprites.dungeon.floorDark1",
             "sprites.dungeon.floorDark4",
-            "sprites.dungeon.floorMixed"
+            "sprites.dungeon.floorMixed",
+            "myTiles.tile2"
         ],
         "displayName": "livello1"
     },
