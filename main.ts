@@ -1,6 +1,6 @@
 controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
     if (nora.vy == 0) {
-        nora.vy = -80
+        nora.vy = -100
     }
 })
 controller.B.onEvent(ControllerButtonEvent.Pressed, function () {
